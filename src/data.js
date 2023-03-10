@@ -1,3 +1,4 @@
+/*MENU*/
 import img1 from "./images/img-1.jpeg"
 import img11 from "./images/img-1-1.jpeg"
 import img12 from "./images/img-1-2.jpeg"
@@ -10,6 +11,12 @@ import img32 from "./images/img-3-2.jpeg"
 import img4 from "./images/img-4.jpeg"
 import img41 from "./images/img-4-1.jpeg"
 import img42 from "./images/img-4-2.jpeg"
+/*GALLERY*/
+import g1 from "./images/g1.jpg"
+import g2 from "./images/g2.jpg"
+import g3 from "./images/g3.jpg"
+import g4 from "./images/g4.jpg"
+
 
 export const menuImagesBig = [
     {
@@ -100,5 +107,12 @@ export const pageLinks = [
         id: 4,
         url: "#team",
         name: "team",
+    },
+]
+
+export const galleryImages = [
+    {
+        id: 1,
+        url: g1,
     },
 ]

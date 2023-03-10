@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import Gallery from './components/Gallery'
 import Head from './components/Head'
 import MenuImgs from './components/MenuImgs'
 import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
@@ -59,7 +60,7 @@ function App() {
             <Head logoWidth={360} classFixed={classFixed}/>
           </header>
           <main>
-
+            <Gallery/>
           </main>
           <footer>
 
