@@ -8,11 +8,14 @@ const Gallery = () => {
     useState(() => {
         window.addEventListener("resize", () => {
             const columnsNumber = Math.floor(window.innerWidth / 300)
+            if (columnsNumber < 1) {
+                columnsNumber = 1
+            }
             setGridColumns(columnsNumber)
         })
     })
     return (
-        <section style={{display: "grid", gridTemplateColumns: `repeat(${gridColumns}, 1fr)`}}>
+        <section style={{display: "grid", gridTemplateColumns: `repeat(${gridColumns}, 1fr)`,}}>
             {images.map((image) => {
                 const {id, url} = image
                 return(
