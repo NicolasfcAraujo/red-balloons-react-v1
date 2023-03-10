@@ -73,7 +73,7 @@ function App() {
             <MenuImgs data={data} imageIndex={index}/>
           </header>
           <main>
-
+            <Gallery/>
           </main>
           <footer>
 
