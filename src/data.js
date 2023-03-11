@@ -115,4 +115,16 @@ export const galleryImages = [
         id: 1,
         url: g1,
     },
+    {
+        id: 2,
+        url: g2,
+    },
+    {
+        id: 3,
+        url: g3,
+    },
+    {
+        id: 4,
+        url: g4,
+    },
 ]

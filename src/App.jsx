@@ -9,6 +9,7 @@ function App() {
   const [data, setData] = useState(menuImagesBig)
   const [index, setIndex] = useState(1)
   const [classFixed, setClassFixed] = useState("header")
+  const [padding, setPadding] = useState("30px")
 
   const handleWidthCheck = () => {
     if (window.innerWidth > 1200){
@@ -28,7 +29,7 @@ function App() {
   useEffect(() => {
     let menuTime = setInterval(() => {
       setIndex(index + 1)
-    }, 3000)
+    }, 6000)
     const lastIndex = data.length
     if (index > lastIndex){
       setIndex(1)
@@ -43,13 +44,15 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY >= (window.innerHeight - 150)){
+      if (window.scrollY >= (window.innerHeight - 120)){
         setClassFixed("header fixed")
+        setPadding("145px")
       } else {
         setClassFixed("header")
+        setPadding("25px")
       }
     })
-  })
+  }, [])
 
   return (
     <>
@@ -60,7 +63,7 @@ function App() {
             <Head logoWidth={360} classFixed={classFixed}/>
           </header>
           <main>
-            <Gallery/>
+            <Gallery padding={padding}/>
           </main>
           <footer>
 
@@ -73,7 +76,7 @@ function App() {
             <MenuImgs data={data} imageIndex={index}/>
           </header>
           <main>
-            <Gallery/>
+            <Gallery padding={"25px"}/>
           </main>
           <footer>
 
