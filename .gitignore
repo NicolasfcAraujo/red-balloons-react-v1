@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# fontawesome
+
+fontawesome-free-6.3.0-web

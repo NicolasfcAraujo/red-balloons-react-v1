@@ -10,14 +10,18 @@ function App() {
   const [index, setIndex] = useState(1)
   const [classFixed, setClassFixed] = useState("header")
   const [padding, setPadding] = useState("30px")
+  const [menu, setMenu] = useState(false)
 
   const handleWidthCheck = () => {
     if (window.innerWidth > 1200){
       setData(menuImagesBig)
+      setMenu(false)
     } else if (window.innerWidth < 1200 && 800 < window.innerWidth) {
       setData(menuImagesMid)
+      setMenu(false)
     } else if (window.innerWidth < 800) {
       setData(menuImagesSmall)
+      setMenu(true)
     }
   }
 
@@ -60,7 +64,7 @@ function App() {
         <>
           <header>
             <MenuImgs data={data} imageIndex={index}/>
-            <Head logoWidth={360} classFixed={classFixed}/>
+            <Head logoWidth={360} classFixed={classFixed} menu={menu}/>
           </header>
           <main>
             <Gallery padding={padding}/>
@@ -72,7 +76,7 @@ function App() {
         : 
         <>
           <header>
-            <Head logoWidth={250} classFixed={"header"}/>
+            <Head logoWidth={250} classFixed={"header"} menu={menu}/>
             <MenuImgs data={data} imageIndex={index}/>
           </header>
           <main>
