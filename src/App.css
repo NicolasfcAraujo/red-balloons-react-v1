@@ -59,6 +59,7 @@ main {
   justify-items: center;
   list-style: none;
   transition: 1s;
+  font-size: 0.9rem;
 }
 
 .links a {

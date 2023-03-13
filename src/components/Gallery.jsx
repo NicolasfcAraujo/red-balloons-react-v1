@@ -7,7 +7,7 @@ const Gallery = ({padding}) => {
     const [columnSize, setColumnSize] = useState(300)
 
     const handleColumnsCheck = () => {
-        if (window.innerWidth < 800){
+        if (window.innerWidth < 815){
             setColumnSize(150)
         } else if (window.innerWidth < 1000){
             setColumnSize(200)

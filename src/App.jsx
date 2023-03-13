@@ -3,7 +3,7 @@ import './App.css'
 import Gallery from './components/Gallery'
 import Head from './components/Head'
 import MenuImgs from './components/MenuImgs'
-import { slideImgs } from './data'
+import { slideImgs, menuImagesSmall } from './data'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
 
 function App() {
@@ -16,10 +16,13 @@ function App() {
   const handleWidthCheck = () => {
     if (window.innerWidth > 1200){
       setMenu(false)
-    } else if (window.innerWidth < 1200 && 800 < window.innerWidth) {
+      setData(slideImgs)
+    } else if (window.innerWidth < 1200 && 815 < window.innerWidth) {
       setMenu(false)
-    } else if (window.innerWidth < 800) {
+      setData(slideImgs)
+    } else if (window.innerWidth < 815) {
       setMenu(true)
+      setData(menuImagesSmall)
     }
   }
 
