@@ -17,6 +17,28 @@ import g2 from "./images/g2.jpg"
 import g3 from "./images/g3.jpg"
 import g4 from "./images/g4.jpg"
 
+export const slideImgs = [
+    {
+        id: 1,
+        name: "red car",
+        image: img1,
+    },
+    {
+        id: 2,
+        name: "girl",
+        image: img2,
+    },
+    {
+        id: 3,
+        name: "rabbit",
+        image: img3,
+    },
+    {
+        id: 4,
+        name: "cyber girl",
+        image: img4,
+    },
+]
 
 export const menuImagesBig = [
     {

@@ -11,7 +11,12 @@ const MenuImgs = ({data, imageIndex}) => {
               imgClass = 'menuImg'
             }
 
-            return <div key={id} className={imgClass} style={{bottom: `calc(${id-1}*(100vh - 120px))`}}><img src={image} alt={name} /></div>
+            return <div key={id}
+                        className={imgClass} 
+                        style={{bottom: `calc(${id-1}*(100vh - 120px))`, 
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundImage: `url(${image})`,}}></div>
         })}
     </div>
   )

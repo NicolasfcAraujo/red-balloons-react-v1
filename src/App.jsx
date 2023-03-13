@@ -3,10 +3,11 @@ import './App.css'
 import Gallery from './components/Gallery'
 import Head from './components/Head'
 import MenuImgs from './components/MenuImgs'
-import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
+import { slideImgs } from './data'
+//import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
 
 function App() {
-  const [data, setData] = useState(menuImagesBig)
+  const [data, setData] = useState(slideImgs)
   const [index, setIndex] = useState(1)
   const [classFixed, setClassFixed] = useState("header")
   const [padding, setPadding] = useState("30px")
@@ -14,13 +15,10 @@ function App() {
 
   const handleWidthCheck = () => {
     if (window.innerWidth > 1200){
-      setData(menuImagesBig)
       setMenu(false)
     } else if (window.innerWidth < 1200 && 800 < window.innerWidth) {
-      setData(menuImagesMid)
       setMenu(false)
     } else if (window.innerWidth < 800) {
-      setData(menuImagesSmall)
       setMenu(true)
     }
   }
