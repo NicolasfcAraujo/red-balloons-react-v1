@@ -75,6 +75,38 @@ main {
   padding-right: 30px;
 }
 
+.altMenu {
+  background: rgb(14, 14, 14); 
+  position: absolute; 
+  top: 120px;
+  width: 100vw;
+  z-index: 50;
+  list-style: none;
+  padding: 20px;
+  animation-name: menuAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes menuAnimation {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.altMenu li {
+  margin: 20px 0 20px 0;
+}
+
+.altMenu a{
+  text-decoration: none;
+  color: rgb(228, 228, 228);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+}
+
 .widthBigger{
   height: 120%;
 }
