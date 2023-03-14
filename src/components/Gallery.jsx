@@ -21,6 +21,14 @@ const Gallery = ({padding}) => {
         setGridColumns(columnsNumber)
     }
 
+    useEffect(() => {
+        let newImages = galleryImages.filter((image) => image.id <= gridColumns*2)
+        if (newImages.length < gridColumns*2){
+            newImages = galleryImages.filter((image) => image.id <= gridColumns)
+        }
+        setImages(newImages)
+    }, [gridColumns])
+
     useEffect(() => handleColumnsCheck())
     useEffect(() => {
         window.addEventListener("resize", () => {
@@ -29,7 +37,9 @@ const Gallery = ({padding}) => {
     },)
 
     return (
-        <section style={{display: "grid", gridTemplateColumns: `repeat(${gridColumns}, 1fr)`, paddingTop: padding}}>
+        <section style={{display: "grid", gridTemplateColumns: `repeat(${gridColumns}, 1fr)`,
+                         gridTemplateRows: (galleryImages.length >= gridColumns*2) ? `1fr 1fr`: `1fr`,
+                         paddingTop: padding}}>
             {images.map((image) => {
                 const {id, url} = image
                 return(
