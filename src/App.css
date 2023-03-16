@@ -108,6 +108,11 @@ main {
   font-size: 1.4rem;
 }
 
+.galleryItem:hover {
+  filter: brightness(0.5);
+  transition: 0.3s;
+}
+
 .widthBigger{
   height: 120%;
 }

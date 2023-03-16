@@ -46,7 +46,8 @@ const Gallery = ({padding}) => {
                     <div key={id} style={{width: `calc(100vw / ${gridColumns})`,
                                           height: `calc(100vw / ${gridColumns})`,
                                           display: "flex", justifyContent: "center", alignItems: "center",
-                                          overflow: "hidden", backgroundSize: "cover", backgroundImage: `url(${url})`}}>
+                                          overflow: "hidden", backgroundSize: "cover", backgroundImage: `url(${url})`,
+                                          cursor: "pointer"}} className="galleryItem" >
                     </div>
                 )
             })}

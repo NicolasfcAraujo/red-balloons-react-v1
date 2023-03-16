@@ -3,6 +3,7 @@ import './App.css'
 import Gallery from './components/Gallery'
 import Head from './components/Head'
 import MenuImgs from './components/MenuImgs'
+import OpenImage from './components/openImage'
 import { slideImgs, menuImagesSmall } from './data'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
 
@@ -69,6 +70,7 @@ function App() {
           </header>
           <main>
             <Gallery padding={padding}/>
+            <OpenImage/>
           </main>
           <footer>
 
@@ -82,6 +84,7 @@ function App() {
           </header>
           <main>
             <Gallery padding={"25px"}/>
+            <OpenImage/>
           </main>
           <footer>
 
