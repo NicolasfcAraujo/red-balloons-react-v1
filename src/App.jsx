@@ -7,7 +7,7 @@ import OpenImage from './components/openImage'
 import { slideImgs, menuImagesSmall } from './data'
 import { useGlobalContext } from './context'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
-
+//
 function App() {
   const [data, setData] = useState(slideImgs)
   const [index, setIndex] = useState(1)
