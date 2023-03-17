@@ -3,7 +3,7 @@
 font-family: 'Montserrat', sans-serif;
 */
 
-
+/*==========  GENERAL ==========*/
 *{
   padding: 0;
   margin: 0;
@@ -15,6 +15,8 @@ main {
   background-image: linear-gradient(180deg, #ffa9e9 0, #ffa9d5 3.85%, #ffacc2 7.69%, #ffafb0 11.54%, #ffb59e 15.38%, #ffbb8e 19.23%, #ffc27f 23.08%, #ffc971 26.92%, #ffd165 30.77%, #ffd85b 34.62%, #ffdf54 38.46%, #ffe650 42.31%, #ffec4f 46.15%, #f2f253 50%, #dff75a 53.85%, #cafc64 57.69%, #b4ff71 61.54%, #9bff80 65.38%, #80ff90 69.23%, #5cffa2 73.08%, #18ffb4 76.92%, #00ffc8 80.77%, #00ffdb 84.62%, #00ffef 88.46%, #00ffff 92.31%, #00ffff 96.15%, #00ffff 100%);
 }
 
+
+/*================= HEADER =================*/
 .menuImg{
   width: 100vw;
   height: calc(100vh - 120px);
@@ -46,6 +48,7 @@ main {
 }
 
 .fixed{
+  z-index: 100;
   position: fixed;
   top: 0;
 }
@@ -113,10 +116,59 @@ main {
   transition: 0.3s;
 }
 
-.widthBigger{
-  height: 120%;
+/*================== MAIN =======================*/
+
+/*-------------- open image -----------------*/
+.btn {
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  z-index: 305;
 }
 
-.heightBigger{
-  width: 120%;
+.btn-cancel{
+  position: fixed;
+  top: 3vh;
+  right: 30px;
+}
+
+.btn-next{
+  position: fixed;
+  top: 50vh;
+  right: 30px;
+}
+
+.btn-previous {
+  position: fixed;
+  top: 50vh;
+  left: 30px;
+}
+
+.openImages {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.685);
+  z-index: 300;
+}
+
+.galleryImg{
+  display: none;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.galleryImg img {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.activeImg{
+  display: block;
 }

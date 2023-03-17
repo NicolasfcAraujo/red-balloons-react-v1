@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react"
 import { galleryImages } from "../data"
+import { useGlobalContext } from "../context"
 
 const Gallery = ({padding}) => {
     const [images, setImages] = useState(galleryImages)
     const [gridColumns, setGridColumns] = useState(null)
     const [columnSize, setColumnSize] = useState(300)
+
+    const { handleOpenGallery } = useGlobalContext()
 
     const handleColumnsCheck = () => {
         if (window.innerWidth < 815){
@@ -14,7 +17,7 @@ const Gallery = ({padding}) => {
         } else {
             setColumnSize(300)
         }       
-        const columnsNumber = Math.floor(window.innerWidth / columnSize)
+        let columnsNumber = Math.floor(window.innerWidth / columnSize)
         if (columnsNumber < 1) {
             columnsNumber = 1
         }
@@ -47,7 +50,7 @@ const Gallery = ({padding}) => {
                                           height: `calc(100vw / ${gridColumns})`,
                                           display: "flex", justifyContent: "center", alignItems: "center",
                                           overflow: "hidden", backgroundSize: "cover", backgroundImage: `url(${url})`,
-                                          cursor: "pointer"}} className="galleryItem" >
+                                          cursor: "pointer"}} className="galleryItem" onClick={() => handleOpenGallery(id)}>
                     </div>
                 )
             })}

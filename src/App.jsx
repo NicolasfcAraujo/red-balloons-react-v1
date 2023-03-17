@@ -5,6 +5,7 @@ import Head from './components/Head'
 import MenuImgs from './components/MenuImgs'
 import OpenImage from './components/openImage'
 import { slideImgs, menuImagesSmall } from './data'
+import { useGlobalContext } from './context'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
   const [classFixed, setClassFixed] = useState("header")
   const [padding, setPadding] = useState("30px")
   const [menu, setMenu] = useState(false)
+
+  const { isGalleryOpen } = useGlobalContext()
 
   const handleWidthCheck = () => {
     if (window.innerWidth > 1200){
@@ -70,7 +73,7 @@ function App() {
           </header>
           <main>
             <Gallery padding={padding}/>
-            <OpenImage/>
+            {isGalleryOpen && <OpenImage/>}
           </main>
           <footer>
 
@@ -84,7 +87,7 @@ function App() {
           </header>
           <main>
             <Gallery padding={"25px"}/>
-            <OpenImage/>
+            {isGalleryOpen && <OpenImage/>}
           </main>
           <footer>
 
