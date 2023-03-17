@@ -3,7 +3,7 @@ import './App.css'
 import Gallery from './components/Gallery'
 import Head from './components/Head'
 import MenuImgs from './components/MenuImgs'
-import OpenImage from './components/openImage'
+import OpenImage from './components/OpenImage' //Solved Error
 import { slideImgs, menuImagesSmall } from './data'
 import { useGlobalContext } from './context'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
