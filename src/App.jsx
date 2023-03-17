@@ -7,6 +7,7 @@ import OpenImage from './components/openImage'
 import { slideImgs, menuImagesSmall } from './data'
 import { useGlobalContext } from './context'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
+//some error with the rollup happened, because the import OpenImage
 
 function App() {
   const [data, setData] = useState(slideImgs)
