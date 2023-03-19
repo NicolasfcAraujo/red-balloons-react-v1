@@ -12,7 +12,7 @@ font-family: 'Montserrat', sans-serif;
 
 main {
   height: 3000px;
-  background-image: linear-gradient(180deg, #ffa9e9 0, #ffa9d5 3.85%, #ffacc2 7.69%, #ffafb0 11.54%, #ffb59e 15.38%, #ffbb8e 19.23%, #ffc27f 23.08%, #ffc971 26.92%, #ffd165 30.77%, #ffd85b 34.62%, #ffdf54 38.46%, #ffe650 42.31%, #ffec4f 46.15%, #f2f253 50%, #dff75a 53.85%, #cafc64 57.69%, #b4ff71 61.54%, #9bff80 65.38%, #80ff90 69.23%, #5cffa2 73.08%, #18ffb4 76.92%, #00ffc8 80.77%, #00ffdb 84.62%, #00ffef 88.46%, #00ffff 92.31%, #00ffff 96.15%, #00ffff 100%);
+  background: rgb(10, 10, 10);
 }
 
 
@@ -41,7 +41,7 @@ main {
   width: 100vw;
   z-index: 100;
   height: 120px;
-  background: rgb(20, 20, 20);
+  background: rgb(25, 25, 25);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;

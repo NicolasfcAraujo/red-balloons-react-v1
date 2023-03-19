@@ -25,8 +25,10 @@ const Gallery = ({padding}) => {
     }
 
     useEffect(() => {
-        let newImages = galleryImages.filter((image) => image.id <= gridColumns*2)
-        if (newImages.length < gridColumns*2){
+        let newImages = galleryImages.filter((image) => image.id <= gridColumns*3)
+        if (newImages.length < gridColumns*3 && newImages.length >= gridColumns*2){
+            newImages = galleryImages.filter((image) => image.id <= gridColumns*2)
+        } else if (newImages.length < gridColumns*2) {
             newImages = galleryImages.filter((image) => image.id <= gridColumns)
         }
         setImages(newImages)
@@ -48,9 +50,10 @@ const Gallery = ({padding}) => {
                 return(
                     <div key={id} style={{width: `calc(100vw / ${gridColumns})`,
                                           height: `calc(100vw / ${gridColumns})`,
-                                          display: "flex", justifyContent: "center", alignItems: "center",
-                                          overflow: "hidden", backgroundSize: "cover", backgroundImage: `url(${url})`,
-                                          cursor: "pointer"}} className="galleryItem" onClick={() => handleOpenGallery(id)}>
+                                          backgroundPosition: "center", overflow: "hidden", 
+                                          backgroundSize: "cover", backgroundImage: `url(${url})`,
+                                          cursor: "pointer"}} className="galleryItem" 
+                                          onClick={() => handleOpenGallery(id)}>
                     </div>
                 )
             })}

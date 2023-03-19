@@ -1,25 +1,39 @@
 /*MENU*/
 import img1 from "./images/img-1.jpeg"
-import img12 from "./images/img-1-2.jpeg"
-import img2 from "./images/img-2.jpeg"
-import img22 from "./images/img-2-2.jpeg"
-import img3 from "./images/img-3.jpeg"
-import img32 from "./images/img-3-2.jpeg"
-import img4 from "./images/img-4.jpeg"
-import img42 from "./images/img-4-2.jpeg"
+import img12 from "./images/img-1-2.jpg"
+import img2 from "./images/img-2.jpg"
+import img22 from "./images/img-2-2.jpg"
+import img3 from "./images/img-3.jpg"
+import img32 from "./images/img-3-2.jpg"
+import img4 from "./images/img-4.jpg"
+import img42 from "./images/img-4-2.jpg"
+import img5 from "./images/img-5.jpg"
+import img52 from "./images/img-5-2.jpg"
+import img6 from "./images/img-6.jpg"
+import img62 from "./images/img-6-2.jpg"
+import img7 from "./images/img-7.jpg"
+import img72 from "./images/img-7-2.jpg"
 /*GALLERY*/
 import g1 from "./images/g1.jpg"
 import g2 from "./images/g2.jpg"
 import g3 from "./images/g3.jpg"
-import g4 from "./images/g4.jpg"
+import g4 from "./images/g4.png"
 import g5 from "./images/g5.jpg"
 import g6 from "./images/g6.jpg"
 import g7 from "./images/g7.jpg"
 import g8 from "./images/g8.jpg"
 import g9 from "./images/g9.jpg"
-import g10 from "./images/g10.jpg"
+import g10 from "./images/g10.png"
 import g11 from "./images/g11.jpg"
 import g12 from "./images/g12.jpg"
+import g13 from "./images/g13.jpg"
+import g14 from "./images/g14.jpg"
+import g15 from "./images/g15.jpg"
+import g16 from "./images/g16.jpg"
+import g17 from "./images/g17.jpg"
+import g18 from "./images/g18.jpg"
+import g19 from "./images/g19.jpg"
+import g20 from "./images/g20.jpg"
 
 export const slideImgs = [
     {
@@ -41,6 +55,21 @@ export const slideImgs = [
         id: 4,
         name: "cyber girl",
         image: img4,
+    },
+    {
+        id: 5,
+        name: "street",
+        image: img5,
+    },
+    {
+        id: 6,
+        name: "face",
+        image: img6,
+    },
+    {
+        id: 7,
+        name: "cyber girl face",
+        image: img7,
     },
 ]
 
@@ -64,6 +93,21 @@ export const menuImagesSmall = [
         id:4,
         name: "cyber girl",
         image: img42,
+    },
+    {
+        id: 5,
+        name: "street",
+        image: img52,
+    },
+    {
+        id: 6,
+        name: "face",
+        image: img62,
+    },
+    {
+        id: 7,
+        name: "cyber girl face",
+        image: img72,
     },
 ]
 
@@ -138,5 +182,37 @@ export const galleryImages = [
     {
         id: 12,
         url: g12,
+    },
+    {
+        id: 13,
+        url: g13,
+    },
+    {
+        id: 14,
+        url: g14,
+    },
+    {
+        id: 15,
+        url: g15,
+    },
+    {
+        id: 16,
+        url: g16,
+    },
+    {
+        id: 17,
+        url: g17,
+    },
+    {
+        id: 18,
+        url: g18,
+    },
+    {
+        id: 19,
+        url: g19,
+    },
+    {
+        id: 20,
+        url: g20,
     },
 ]
