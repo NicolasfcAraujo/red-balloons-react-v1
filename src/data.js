@@ -35,6 +35,8 @@ import g17 from "./images/g17.jpg"
 import g18 from "./images/g18.jpg"
 import g19 from "./images/g19.jpg"
 import g20 from "./images/g20.jpg"
+/*GAMES*/
+import game1 from "./images/game1.png"
 
 
 export const slideImgs = [
@@ -227,4 +229,13 @@ export const galleryImages = [
         id: 20,
         url: g20,
     },
+]
+
+export const games = [
+    {
+        id: 1,
+        image: game1,
+        alt: "Cat game",
+        name: "ESCAPE CATS",
+    }
 ]

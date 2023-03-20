@@ -6,6 +6,9 @@ import MenuImgs from './components/MenuImgs'
 import OpenImage from './components/OpenImage' //Solved Error
 import { slideImgs, menuImagesSmall } from './data'
 import { useGlobalContext } from './context'
+import Games from './components/Games'
+import Studio from './components/Studio'
+import Footer from './components/Footer'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
 
 function App() {
@@ -74,9 +77,11 @@ function App() {
           <main>
             <Gallery padding={padding}/>
             {isGalleryOpen && <OpenImage/>}
+            <Games/>
+            <Studio/>
           </main>
           <footer>
-
+            <Footer/>
           </footer>
         </>
         : 
@@ -88,9 +93,11 @@ function App() {
           <main>
             <Gallery padding={"25px"}/>
             {isGalleryOpen && <OpenImage/>}
+            <Games/>
+            <Studio/>
           </main>
           <footer>
-
+            <Footer/>
           </footer>
         </>
         }

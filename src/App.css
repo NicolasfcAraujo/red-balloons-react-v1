@@ -11,10 +11,13 @@ font-family: 'Montserrat', sans-serif;
 }
 
 main {
-  height: 3000px;
   background: rgb(10, 10, 10);
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
 
 /*================= HEADER =================*/
 .menuImg{
@@ -171,4 +174,18 @@ main {
 
 .activeImg{
   display: block;
+}
+
+/*----------------- games -------------------*/
+.gameArticle img:hover{
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/*===================== FOOTER =======================*/
+.footer{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: rgb(20, 20, 20);
 }
