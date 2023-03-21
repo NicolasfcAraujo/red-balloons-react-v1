@@ -89,7 +89,7 @@ function App() {
         </>
         : 
         <>
-          <header>
+          <header id='home'>
             <Head logoWidth={250} classFixed={"header"} menu={menu}/>
             <MenuImgs data={data} imageIndex={index}/>
           </header>
