@@ -128,23 +128,23 @@ export const menuImagesSmall = [
 export const pageLinks = [
     {
         id: 1,
-        url: "#home",
+        url: "home",
         name: "home",
     },
     {
         id: 2,
-        url: "#games",
+        url: "games",
         name: "games",
     },
     {
         id: 3,
-        url: "#about",
-        name: "about",
+        url: "studio",
+        name: "studio",
     },
     {
         id: 4,
-        url: "#team",
-        name: "team",
+        url: "contacts",
+        name: "contacts",
     },
 ]
 

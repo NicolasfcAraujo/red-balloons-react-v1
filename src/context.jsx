@@ -6,7 +6,6 @@ const AppContext = React.createContext()
 const AppProvider = ({children}) => {
     const [isGalleryOpen, setIsGalleryOpen] = useState(false)
     const [imageId, setImageId] = useState(1)
-    const [isOrc, setIsOrc] = useState(false)
 
     const handleOpenGallery = (id) => {
         setImageId(id)
@@ -32,10 +31,6 @@ const AppProvider = ({children}) => {
         }
     }
 
-    const handleOrcToggle = () => {
-        setIsOrc(!isOrc)
-    }
-
     return (
         <AppContext.Provider value={{isGalleryOpen,
                                      handleOpenGallery,
@@ -43,8 +38,7 @@ const AppProvider = ({children}) => {
                                      imageId,
                                      handleNextImage,
                                      handlePreviousImage,
-                                     isOrc,
-                                     handleOrcToggle}}>
+                                     }}>
             {children}
         </AppContext.Provider>
     )

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap');
 /*
 font-family: 'Golos Text', sans-serif;
 */
@@ -17,6 +17,7 @@ main {
 body {
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #root{
@@ -193,4 +194,9 @@ body {
   align-items: center;
   height: 60px;
   background: rgb(20, 20, 20);
+}
+
+.hover:hover{
+  filter: brightness(0.75);
+  transition: 0.4s;
 }

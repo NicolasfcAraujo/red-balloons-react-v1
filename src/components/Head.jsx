@@ -12,7 +12,9 @@ const Head = ({logoWidth, classFixed, menu}) => {
     <>
       <div className={classFixed}>
         <div className='logo'>
-            <img src={logo} alt="red balloons" style={{width:`${logoWidth}px`}}/>
+            <a href="">
+              <img src={logo} alt="red balloons" style={{width:`${logoWidth}px`}}/>
+            </a>
         </div>
         {/*         MENU TOGGLE         */}
         {menu ?

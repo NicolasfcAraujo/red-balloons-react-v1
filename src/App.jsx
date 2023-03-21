@@ -10,6 +10,7 @@ import Games from './components/Games'
 import Studio from './components/Studio'
 import Footer from './components/Footer'
 import SocialLinks from './components/SocialLinks'
+import ScrollToTop from './components/ScrollToTop'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
 
 function App() {
@@ -71,7 +72,7 @@ function App() {
     <>
       {(window.innerWidth > 1200) ? 
         <>
-          <header>
+          <header id='home'>
             <MenuImgs data={data} imageIndex={index}/>
             <Head logoWidth={360} classFixed={classFixed} menu={menu}/>
           </header>
@@ -84,6 +85,7 @@ function App() {
           <footer>
             <Footer/>
           </footer>
+          <ScrollToTop/>
         </>
         : 
         <>
@@ -100,6 +102,7 @@ function App() {
           <footer>
             <Footer/>
           </footer>
+          <ScrollToTop/>
         </>
         }
     </>
