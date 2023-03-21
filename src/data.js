@@ -162,7 +162,7 @@ export const socialLinks = [
     {
         id: 3,
         className: "fa-brands fa-instagram",
-        url: "https://www.instagram.com/redballoonsgames/",
+        url: "https://www.instagram.com/redballoonsstudios/",
     },
 ]
 
