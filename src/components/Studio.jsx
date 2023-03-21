@@ -7,7 +7,7 @@ const Studio = () => {
 
     return (
         <section style={{display: "grid", gridTemplateColumns: "repeat(4, 25vw)",
-                         gridTemplateRows: "repeat(2, 500px)", height: "1000px"}}
+                         gridTemplateRows: "repeat(2, 1fr)", height: "1000px"}}
                  id="studio">
             <div style={{gridColumnStart: "1", gridColumnEnd: "2",
                          gridRowStart: "1", gridRowEnd: "2", background: "red",
