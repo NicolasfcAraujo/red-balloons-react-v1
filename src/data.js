@@ -37,7 +37,11 @@ import g19 from "./images/g19.jpg"
 import g20 from "./images/g20.jpg"
 /*GAMES*/
 import game1 from "./images/game1.png"
-
+/*TEAM*/
+import p1 from "./images/p1.jpg"
+import p2 from "./images/p2.jpg"
+import p3 from "./images/p3.jpg"
+import p4 from "./images/p4.jpg"
 
 export const slideImgs = [
     {
@@ -257,4 +261,59 @@ export const games = [
         name: "ESCAPE CATS",
         url: " https://play.google.com/store/apps/details?id=com.RedBalloonsGames.EscapeCats",
     }
+]
+
+export const people = [
+    {
+        id: 1,
+        name: "Edmar Junior",
+        image: p1,
+        position: "",
+        social: [
+            {
+                socialId: 1,
+                socialName: "",
+                url: "",
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "Nícolas Araujo",
+        image: p2,
+        position: "",
+        social: [
+            {
+                socialId: 1,
+                socialName: "",
+                url: "",
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "Hugo Buarques",
+        image: p3,
+        position: "",
+        social: [
+            {
+                socialId: 1,
+                socialName: "",
+                url: "",
+            }
+        ]
+    },
+    {
+        id: 4,
+        name: "Oda Junior",
+        image: p4,
+        position: "",
+        social: [
+            {
+                socialId: 1,
+                socialName: "fa-brands fa-artstation",
+                url: "https://www.artstation.com/oddoda",
+            }
+        ]
+    },
 ]
