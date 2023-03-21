@@ -1,8 +1,8 @@
 import { socialLinks } from "../data"
 
-const SocialLinks = () => {
+const SocialLinks = ({justify="flex-end"}) => {
     return (
-        <ul style={{display: "flex", listStyle: "none", justifyContent: "flex-end"}}>
+        <ul style={{display: "flex", listStyle: "none", justifyContent: justify}}>
             {socialLinks.map((link) => {
                 const {id, className, url} = link
                 return (

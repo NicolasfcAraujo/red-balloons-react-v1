@@ -36,7 +36,7 @@ const Head = ({logoWidth, classFixed, menu}) => {
       {altMenu &&
         <div className='altMenu'>
           <PageLinks links={pageLinks}/>
-          <SocialLinks/>
+          <SocialLinks justify='flex-start'/>
         </div>
       }
     </>
