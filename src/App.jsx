@@ -9,6 +9,7 @@ import { useGlobalContext } from './context'
 import Games from './components/Games'
 import Studio from './components/Studio'
 import Footer from './components/Footer'
+import SocialLinks from './components/SocialLinks'
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
 
 function App() {

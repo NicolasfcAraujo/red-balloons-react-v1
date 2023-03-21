@@ -148,6 +148,24 @@ export const pageLinks = [
     },
 ]
 
+export const socialLinks = [
+    {
+        id: 1,
+        className: "fa-brands fa-linkedin",
+        url: "#",
+    },
+    {
+        id: 2,
+        className: "fa-brands fa-artstation",
+        url: "#",
+    },
+    {
+        id: 3,
+        className: "fa-brands fa-instagram",
+        url: "#",
+    },
+]
+
 export const galleryImages = [
     {
         id: 1,

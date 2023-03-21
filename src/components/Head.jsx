@@ -3,6 +3,7 @@ import { pageLinks } from '../data'
 import PageLinks from './PageLinks'
 import { useEffect, useRef, useState } from 'react'
 import "../../fontawesome-free-6.3.0-web/css/all.min.css"
+import SocialLinks from './SocialLinks'
 
 const Head = ({logoWidth, classFixed, menu}) => {
   const [altMenu, setAltMenu] = useState(false)
@@ -28,12 +29,14 @@ const Head = ({logoWidth, classFixed, menu}) => {
             <nav className='links' style={{gridTemplateColumns: `repeat(${pageLinks.length}, 1fr)`}}>
               <PageLinks links={pageLinks}/>
             </nav>
+            <SocialLinks/>
           </>
         }
       </div>
       {altMenu &&
         <div className='altMenu'>
           <PageLinks links={pageLinks}/>
+          <SocialLinks/>
         </div>
       }
     </>

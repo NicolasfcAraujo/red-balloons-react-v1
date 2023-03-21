@@ -186,6 +186,7 @@ body {
 .footer{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 60px;
   background: rgb(20, 20, 20);
 }
