@@ -1,12 +1,12 @@
 import { Link } from "react-scroll"
-/*<a href={url}>{name}</a>*/
+
 const PageLinks = ({links, className, altMenuRef}) => {
 
   return (
     <>
         {links.map((link) => {
             const {id, url, name} = link
-            return <li key={id} className={className} ref={altMenuRef}>
+            return <li key={id} className={className}>
                     <Link activeClass="active" 
                           to={url} 
                           spy={true} 

@@ -4,9 +4,10 @@ import PageLinks from './PageLinks'
 import { useEffect, useRef, useState } from 'react'
 import "../../fontawesome-free-6.3.0-web/css/all.min.css"
 import SocialLinks from './SocialLinks'
+import { useGlobalContext } from '../context'
 
 const Head = ({logoWidth, classFixed, menu}) => {
-  const [altMenu, setAltMenu] = useState(false)
+  const { altMenu, setAltMenu } = useGlobalContext()
 
   return (
     <>
@@ -21,7 +22,7 @@ const Head = ({logoWidth, classFixed, menu}) => {
           <>
             <div></div>
             <div style={{display: "flex", justifyContent: "flex-end"}}>
-              <button className='menuBtn' onClick={() => setAltMenu(!altMenu)}>
+              <button className='menuBtn' onClick={() => {setAltMenu(!altMenu)}}>
                 <i className="fa-solid fa-bars"></i>
               </button>
             </div>

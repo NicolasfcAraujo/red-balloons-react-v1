@@ -1,14 +1,17 @@
 import "../../fontawesome-free-6.3.0-web/css/all.min.css"
 import { Link } from "react-scroll"
 import { useState } from "react"
+import { useGlobalContext } from "../context"
 
 const ScrollToTop = ({}) => {
     const [offset, setOffset] = useState(false)
+    const { setAltMenu } = useGlobalContext()
 
     useState(() => {
         window.addEventListener("scroll", () => {
             if (window.pageYOffset > 500) {
                 setOffset(true)
+                setAltMenu(false)
             } else {
                 setOffset(false)
             }

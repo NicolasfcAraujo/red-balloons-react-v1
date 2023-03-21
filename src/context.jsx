@@ -6,6 +6,7 @@ const AppContext = React.createContext()
 const AppProvider = ({children}) => {
     const [isGalleryOpen, setIsGalleryOpen] = useState(false)
     const [imageId, setImageId] = useState(1)
+    const [altMenu, setAltMenu] = useState(false)
 
     const handleOpenGallery = (id) => {
         setImageId(id)
@@ -38,6 +39,8 @@ const AppProvider = ({children}) => {
                                      imageId,
                                      handleNextImage,
                                      handlePreviousImage,
+                                     altMenu,
+                                     setAltMenu,
                                      }}>
             {children}
         </AppContext.Provider>
