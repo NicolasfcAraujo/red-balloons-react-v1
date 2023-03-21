@@ -255,5 +255,6 @@ export const games = [
         image: game1,
         alt: "Cat game",
         name: "ESCAPE CATS",
+        url: " https://play.google.com/store/apps/details?id=com.RedBalloonsGames.EscapeCats",
     }
 ]
