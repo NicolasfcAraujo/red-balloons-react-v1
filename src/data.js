@@ -152,17 +152,17 @@ export const socialLinks = [
     {
         id: 1,
         className: "fa-brands fa-linkedin",
-        url: "#",
+        url: "https://www.linkedin.com/company/redballoonsstudios",
     },
     {
         id: 2,
         className: "fa-brands fa-artstation",
-        url: "#",
+        url: "https://www.artstation.com/redballoonsgames",
     },
     {
         id: 3,
         className: "fa-brands fa-instagram",
-        url: "#",
+        url: "https://www.instagram.com/redballoonsgames/",
     },
 ]
 
