@@ -268,12 +268,17 @@ export const people = [
         id: 1,
         name: "Edmar Junior",
         image: p1,
-        position: "",
+        position: "2D/3D Artist",
         social: [
             {
                 socialId: 1,
-                socialName: "",
-                url: "",
+                socialName: "fa-brands fa-artstation",
+                url: "https://www.artstation.com/artedjunior",
+            },
+            {
+                socialId: 1,
+                socialName: "fa-brands fa-linkedin",
+                url: "https://www.linkedin.com/in/edmar-junior-26612975/",
             }
         ]
     },
@@ -281,12 +286,17 @@ export const people = [
         id: 2,
         name: "Nícolas Araujo",
         image: p2,
-        position: "",
+        position: "Programmer",
         social: [
             {
                 socialId: 1,
-                socialName: "",
-                url: "",
+                socialName: "fa-brands fa-linkedin",
+                url: "https://www.linkedin.com/in/n%C3%ADcolas-araujo-b9180b234/",
+            },
+            {
+                socialId: 2,
+                socialName: "fa-brands fa-github",
+                url: "https://github.com/NicolasfcAraujo",
             }
         ]
     },
@@ -294,7 +304,7 @@ export const people = [
         id: 3,
         name: "Oda Junior",
         image: p4,
-        position: "",
+        position: "Concept Artist",
         social: [
             {
                 socialId: 1,
@@ -307,12 +317,12 @@ export const people = [
         id: 4,
         name: "Hugo Buarques",
         image: p3,
-        position: "",
+        position: "3D Modeling",
         social: [
             {
                 socialId: 1,
-                socialName: "",
-                url: "",
+                socialName: "fa-brands fa-instagram",
+                url: "https://www.instagram.com/art1up_studio/",
             }
         ]
     },

@@ -17,7 +17,7 @@ const Team = () => {
     useEffect(() => handleTeamColumns())
     useEffect(() => {
         window.addEventListener("resize", () => handleTeamColumns())
-    })
+    },[])
 
     return (
         <section style={{padding: "45px 45px", fontFamily: 'Golos Text'}}>
@@ -29,20 +29,21 @@ const Team = () => {
                 {people.map((person) => {
                     const { id, name, image, position, social } = person
                     return (
-                        <article key={id} style={{width: `${articleSize}px`}}>
+                        <article key={id} style={{width: `${articleSize}px`, paddingBottom: "50px"}}>
                             <div>
                                 <img style={{width: `${articleSize}px`}} src={image} alt={name} />
                             </div>
                             <div>
                                 <p style={{fontSize: articleSize < 200 ? "1rem":"1.6rem"}}>{name}</p>
-                                <p style={{fontSize: articleSize < 200 ? "1rem":"1rem"}}>{position}</p>
-                                <ul>
+                                <p style={{fontSize: articleSize < 200 ? "0.8rem":"1.2rem"}}>{position}</p>
+                                <ul style={{display: "flex"}}>
                                     {social.map((socialMedia) => {
                                         const { socialId, socialName, url} = socialMedia
 
                                         return (
-                                            <li key={socialId} style={{listStyle: "none"}}>
-                                                <a href={url} style={{textDecoration: "none"}}>
+                                            <li key={socialId} style={{listStyle: "none", padding: "15px 20px 0 0", 
+                                                                       fontSize: articleSize < 200 ? "1.2rem" : "1.4rem"}}>
+                                                <a href={url} style={{textDecoration: "none", color: "rgb(40,40,40)"}}>
                                                     <i class={socialName}></i>
                                                 </a>
                                             </li>
