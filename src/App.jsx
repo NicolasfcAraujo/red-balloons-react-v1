@@ -9,8 +9,8 @@ import { useGlobalContext } from './context'
 import Games from './components/Games'
 import Studio from './components/Studio'
 import Footer from './components/Footer'
-import SocialLinks from './components/SocialLinks'
 import ScrollToTop from './components/ScrollToTop'
+import "../fontawesome-free-6.3.0-web/css/all.css"
 //import { menuImagesBig, menuImagesMid, menuImagesSmall } from './data'
 
 function App() {

@@ -292,19 +292,6 @@ export const people = [
     },
     {
         id: 3,
-        name: "Hugo Buarques",
-        image: p3,
-        position: "",
-        social: [
-            {
-                socialId: 1,
-                socialName: "",
-                url: "",
-            }
-        ]
-    },
-    {
-        id: 4,
         name: "Oda Junior",
         image: p4,
         position: "",
@@ -313,6 +300,19 @@ export const people = [
                 socialId: 1,
                 socialName: "fa-brands fa-artstation",
                 url: "https://www.artstation.com/oddoda",
+            }
+        ]
+    },
+    {
+        id: 4,
+        name: "Hugo Buarques",
+        image: p3,
+        position: "",
+        social: [
+            {
+                socialId: 1,
+                socialName: "",
+                url: "",
             }
         ]
     },

@@ -131,9 +131,9 @@ body {
   background: transparent;
   border: none;
   font-size: 3rem;
-  color: white;
   cursor: pointer;
   z-index: 305;
+  color: white;
 }
 
 .btn-cancel{
@@ -152,6 +152,14 @@ body {
   position: fixed;
   top: 50vh;
   left: 30px;
+}
+
+.btn-team {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 2rem;
+  z-index: 100;
 }
 
 .openImages {

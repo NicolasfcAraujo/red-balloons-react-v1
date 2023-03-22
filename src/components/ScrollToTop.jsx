@@ -1,4 +1,4 @@
-import "../../fontawesome-free-6.3.0-web/css/all.min.css"
+
 import { Link } from "react-scroll"
 import { useState } from "react"
 import { useGlobalContext } from "../context"

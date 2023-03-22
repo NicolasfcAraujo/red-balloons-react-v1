@@ -2,7 +2,7 @@ import logo from '../images/logo.png'
 import { pageLinks } from '../data'
 import PageLinks from './PageLinks'
 import { useEffect, useRef, useState } from 'react'
-import "../../fontawesome-free-6.3.0-web/css/all.min.css"
+
 import SocialLinks from './SocialLinks'
 import { useGlobalContext } from '../context'
 
