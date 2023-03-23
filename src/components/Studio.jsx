@@ -1,5 +1,4 @@
 import orcImg from "../images/orc.jpg"
-import { useGlobalContext } from "../context"
 import Team from "./Team"
 
 const Studio = () => { 
@@ -24,7 +23,7 @@ const Studio = () => {
                         Red Balloons Studios is an indie studio in Recife, PE. Brazil.<br /><br />
 
                         If you have any questions about our work, please contact: <br />
-                        e-mail: contato@redballoonsgames.com.br<br /><br />
+                        e-mail: <b>contact@redballoonsstudios.com</b><br /><br />
 
                         Service: outsource of <b>illustration</b>, <b>concept art</b> and <b>3d modeling</b>
                     </p>

@@ -35,6 +35,10 @@ import g17 from "./images/g17.jpg"
 import g18 from "./images/g18.jpg"
 import g19 from "./images/g19.jpg"
 import g20 from "./images/g20.jpg"
+import g21 from "./images/g21.jpg"
+import g22 from "./images/g22.jpg"
+import g23 from "./images/g23.jpg"
+import g24 from "./images/g24.jpeg"
 /*GAMES*/
 import game1 from "./images/game1.png"
 /*TEAM*/
@@ -250,6 +254,22 @@ export const galleryImages = [
     {
         id: 20,
         url: g20,
+    },
+    {
+        id: 21,
+        url: g21,
+    },
+    {
+        id: 22,
+        url: g22,
+    },
+    {
+        id: 23,
+        url: g23,
+    },
+    {
+        id: 24,
+        url: g24,
     },
 ]
 

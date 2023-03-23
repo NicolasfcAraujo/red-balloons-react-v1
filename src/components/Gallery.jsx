@@ -25,8 +25,10 @@ const Gallery = ({padding}) => {
     }
 
     useEffect(() => {
-        let newImages = galleryImages.filter((image) => image.id <= gridColumns*3)
-        if (newImages.length < gridColumns*3 && newImages.length >= gridColumns*2){
+        let newImages = galleryImages.filter((image) => image.id <= gridColumns*4)
+        if (newImages.length < gridColumns*4 && newImages.length >= gridColumns*3){
+            newImages = galleryImages.filter((image) => image.id <= gridColumns*3)
+        } else if (newImages.length < gridColumns*3 && newImages.length >= gridColumns*2) {
             newImages = galleryImages.filter((image) => image.id <= gridColumns*2)
         } else if (newImages.length < gridColumns*2) {
             newImages = galleryImages.filter((image) => image.id <= gridColumns)

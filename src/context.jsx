@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useState, useContext, useEffect } from "react"
 import { galleryImages } from "./data"
 
 const AppContext = React.createContext()
@@ -11,11 +11,13 @@ const AppProvider = ({children}) => {
     const handleOpenGallery = (id) => {
         setImageId(id)
         setIsGalleryOpen(true)
+        document.body.style.overflow = "hidden"
     }
 
     const handleCloseGallery = () => {
         setIsGalleryOpen(false)
         setImageId(1)
+        document.body.style.overflow = "scroll"
     }
 
     const handleNextImage = () => {
