@@ -1,2 +1,2 @@
 # red-balloons-react-v1
-Red Balloons's web page builded with react.js
+Red Balloons's web page built with react.js
