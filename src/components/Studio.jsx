@@ -22,6 +22,9 @@ const Studio = () => {
 
                         Red Balloons Studios is an indie studio in Recife, PE. Brazil.<br /><br />
 
+                        Our artists have worked on games such as: The Elderscrolls onlineiMax, DC Universe Online, <br />
+                        Sony - Star Wars Galaxies, Overwatch, Sniper Ghost Warrior Contracts, Horizon: Forbidden West and others <br /><br />
+
                         If you have any questions about our work, please contact: <br />
                         e-mail: <b>contact@redballoonsstudios.com</b><br /><br />
 
